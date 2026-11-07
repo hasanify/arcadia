@@ -32,7 +32,12 @@
     "import/no-relative-parent-imports": "error",
     "better-tailwindcss/enforce-consistent-class-order": "error",
     "better-tailwindcss/enforce-consistent-important-position": "error",
-    "better-tailwindcss/enforce-consistent-line-wrapping": "error",
+    "better-tailwindcss/enforce-consistent-line-wrapping": [
+      "error",
+      {
+        "strictness": "loose"
+      }
+    ],
     "better-tailwindcss/enforce-consistent-variant-order": "error",
     "better-tailwindcss/enforce-consistent-variable-syntax": "error",
     "better-tailwindcss/enforce-logical-properties": "error",
