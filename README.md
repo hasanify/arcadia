@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/logo.webp" alt="Arcadia Logo" width="160" />
+  <img src="./public/logo-192.webp" alt="Arcadia Logo" width="160" />
 </p>
 
 # Arcadia

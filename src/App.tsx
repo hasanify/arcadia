@@ -28,7 +28,13 @@ export function App() {
         "
       >
         <div className="flex items-center gap-3">
-          <img src="/logo.webp" alt="Arcadia Logo" className="object-contain block-7 inline-auto" />
+          <img
+            src="/logo-64.webp"
+            alt="Arcadia Logo"
+            width={28}
+            height={28}
+            className="object-contain block-7 inline-auto"
+          />
           <span className="text-sm font-semibold tracking-wide text-text">Arcadia</span>
         </div>
 
@@ -69,7 +75,13 @@ export function App() {
               border-line bg-field p-3
             "
           >
-            <img src="/logo.webp" alt="Arcadia" className="object-contain block-12 inline-12" />
+            <img
+              src="/logo-128.webp"
+              alt="Arcadia"
+              width={48}
+              height={48}
+              className="object-contain block-12 inline-12"
+            />
           </div>
           <h1 className="text-xl font-bold tracking-tight text-text">Arcadia Gamepad Studio</h1>
           <p className="text-sm/relaxed text-muted">

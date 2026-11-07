@@ -16,7 +16,14 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'logo.webp'],
+      includeAssets: [
+        'favicon.ico',
+        'logo-32.webp',
+        'logo-64.webp',
+        'logo-128.webp',
+        'logo-192.webp',
+        'logo-512.webp',
+      ],
       manifest: {
         name: 'Arcadia',
         short_name: 'Arcadia',
@@ -26,10 +33,10 @@ export default defineConfig({
         background_color: '#4a4a4a',
         theme_color: '#2e2e2e',
         icons: [
-          { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
-          { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
+          { src: 'logo-192.png', sizes: '192x192', type: 'image/png' },
+          { src: 'logo-512.png', sizes: '512x512', type: 'image/png' },
           {
-            src: 'icons/maskable-512.png',
+            src: 'logo-512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable',
