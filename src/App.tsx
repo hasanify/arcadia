@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Moon, Sun } from 'lucide-react';
 
+import { AudioGate } from '@/components/AudioGate';
+import { performanceController } from '@/engine/performanceController';
 import { useUIStore } from '@/state/uiStore';
 
 void React;
@@ -8,6 +10,13 @@ void React;
 export function App() {
   const theme = useUIStore((state) => state.theme);
   const toggleTheme = useUIStore((state) => state.toggleTheme);
+
+  useEffect(() => {
+    void performanceController.start();
+    return () => {
+      performanceController.stop();
+    };
+  }, []);
 
   return (
     <div className="flex flex-col bg-bg text-text min-block-screen">
@@ -23,8 +32,9 @@ export function App() {
           <span className="text-sm font-semibold tracking-wide text-text">Arcadia</span>
         </div>
 
-        {/* Studio Controls & Theme */}
+        {/* Studio Controls, Audio Gate & Theme */}
         <div className="flex items-center gap-3">
+          <AudioGate />
           <button
             type="button"
             onClick={toggleTheme}
@@ -46,7 +56,7 @@ export function App() {
         </div>
       </header>
 
-      {/* Main Studio Workspace Placeholder for Phase 0 */}
+      {/* Main Studio Workspace Placeholder */}
       <main
         className="
           flex flex-1 flex-col items-center justify-center p-6 text-center
