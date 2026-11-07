@@ -47,8 +47,9 @@ export function ActionsTab({ player }: ActionsTabProps) {
     <div className="flex flex-col gap-6" data-testid="actions-tab">
       <div
         className="
-        flex flex-col gap-3 rounded-panel border border-line/50 bg-panel/60 p-4
-      "
+          flex flex-col gap-3 rounded-panel border border-line/50 bg-panel/60
+          p-4
+        "
       >
         <div>
           <h3 className="text-sm font-bold text-text">Auxiliary Hardware Action Buttons</h3>

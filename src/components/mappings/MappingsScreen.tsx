@@ -32,17 +32,17 @@ export function MappingsScreen({ player }: MappingsScreenProps) {
   return (
     <div
       className="
-      flex flex-1 flex-col bg-bg p-4
-      md:p-8
-    "
+        flex flex-1 flex-col bg-bg p-4
+        md:p-8
+      "
       data-testid="mappings-screen"
     >
       <div className="mx-auto flex flex-col gap-6 inline-full max-inline-5xl">
         {/* Navigation Breadcrumb & Header */}
         <div
           className="
-          flex items-center justify-between border-be border-line/60 pbe-4
-        "
+            flex items-center justify-between border-be border-line/60 pbe-4
+          "
         >
           <div className="flex items-center gap-3">
             <button
@@ -69,8 +69,8 @@ export function MappingsScreen({ player }: MappingsScreenProps) {
         {/* Sub-Tab Navigation Strip */}
         <div
           className="
-          flex flex-wrap items-center gap-1.5 border-be border-line/40 pbe-2
-        "
+            flex flex-wrap items-center gap-1.5 border-be border-line/40 pbe-2
+          "
         >
           <button
             type="button"

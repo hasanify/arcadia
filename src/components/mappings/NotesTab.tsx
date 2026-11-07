@@ -75,8 +75,9 @@ export function NotesTab({ player }: NotesTabProps) {
       {/* Note Mode Selector */}
       <div
         className="
-        flex flex-col gap-2 rounded-panel border border-line/50 bg-panel/60 p-4
-      "
+          flex flex-col gap-2 rounded-panel border border-line/50 bg-panel/60
+          p-4
+        "
       >
         <label className="text-xs font-bold tracking-wider text-muted uppercase">
           Mapping Strategy
@@ -125,10 +126,10 @@ export function NotesTab({ player }: NotesTabProps) {
       {playerConfig.noteMode === 'scale' && (
         <div
           className="
-          grid grid-cols-1 gap-4 rounded-panel border border-line/50 bg-panel/60
-          p-4
-          md:grid-cols-3
-        "
+            grid grid-cols-1 gap-4 rounded-panel border border-line/50
+            bg-panel/60 p-4
+            md:grid-cols-3
+          "
         >
           {/* Scale Root */}
           <div className="flex flex-col gap-1.5">
@@ -208,18 +209,18 @@ export function NotesTab({ player }: NotesTabProps) {
       {playerConfig.noteMode === 'absolute' && (
         <div
           className="
-          flex flex-col gap-3 rounded-panel border border-line/50 bg-panel/60
-          p-4
-        "
+            flex flex-col gap-3 rounded-panel border border-line/50 bg-panel/60
+            p-4
+          "
         >
           <label className="text-xs font-bold tracking-wider text-muted uppercase">
             10-Button Note Map
           </label>
           <div
             className="
-            grid grid-cols-1 gap-2
-            sm:grid-cols-2
-          "
+              grid grid-cols-1 gap-2
+              sm:grid-cols-2
+            "
           >
             {NOTE_BUTTONS.map((btn) => (
               <div
@@ -250,10 +251,10 @@ export function NotesTab({ player }: NotesTabProps) {
       {/* Global Modifiers: Octave Shift & Transpose */}
       <div
         className="
-        grid grid-cols-1 gap-4 rounded-panel border border-line/50 bg-panel/60
-        p-4
-        md:grid-cols-2
-      "
+          grid grid-cols-1 gap-4 rounded-panel border border-line/50 bg-panel/60
+          p-4
+          md:grid-cols-2
+        "
       >
         {/* Octave Shift */}
         <div className="flex flex-col gap-2">

@@ -20,8 +20,9 @@ export function ControllerTab({ player, onOpenRemapWizard }: ControllerTabProps)
       {/* Pad Assignment & Wizard */}
       <div
         className="
-        flex flex-col gap-3 rounded-panel border border-line/50 bg-panel/60 p-4
-      "
+          flex flex-col gap-3 rounded-panel border border-line/50 bg-panel/60
+          p-4
+        "
       >
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -101,10 +102,10 @@ export function ControllerTab({ player, onOpenRemapWizard }: ControllerTabProps)
       {/* Deadzones & Shaping */}
       <div
         className="
-        grid grid-cols-1 gap-4 rounded-panel border border-line/50 bg-panel/60
-        p-4
-        md:grid-cols-2
-      "
+          grid grid-cols-1 gap-4 rounded-panel border border-line/50 bg-panel/60
+          p-4
+          md:grid-cols-2
+        "
       >
         {/* Stick Deadzone */}
         <div className="flex flex-col gap-2">
@@ -217,8 +218,9 @@ export function ControllerTab({ player, onOpenRemapWizard }: ControllerTabProps)
       {/* Rumble Haptics */}
       <div
         className="
-        flex flex-col gap-3 rounded-panel border border-line/50 bg-panel/60 p-4
-      "
+          flex flex-col gap-3 rounded-panel border border-line/50 bg-panel/60
+          p-4
+        "
       >
         <div className="flex items-center justify-between">
           <div>

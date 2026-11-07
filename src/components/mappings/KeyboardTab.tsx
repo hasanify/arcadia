@@ -79,8 +79,9 @@ export function KeyboardTab() {
       {/* Global Configuration */}
       <div
         className="
-        flex flex-col gap-4 rounded-panel border border-line/50 bg-panel/60 p-4
-      "
+          flex flex-col gap-4 rounded-panel border border-line/50 bg-panel/60
+          p-4
+        "
       >
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -109,16 +110,16 @@ export function KeyboardTab() {
 
         <div
           className="
-          grid grid-cols-1 gap-4 pbs-2
-          md:grid-cols-3
-        "
+            grid grid-cols-1 gap-4 pbs-2
+            md:grid-cols-3
+          "
         >
           {/* Enable Toggle */}
           <div
             className="
-            flex items-center justify-between rounded-field border
-            border-line/40 bg-field p-3
-          "
+              flex items-center justify-between rounded-field border
+              border-line/40 bg-field p-3
+            "
           >
             <div>
               <label className="text-xs font-semibold text-text">Keyboard Mode</label>
@@ -148,9 +149,9 @@ export function KeyboardTab() {
           {/* Target Player */}
           <div
             className="
-            flex flex-col gap-1.5 rounded-field border border-line/40 bg-field
-            p-3
-          "
+              flex flex-col gap-1.5 rounded-field border border-line/40 bg-field
+              p-3
+            "
           >
             <label className="text-xs font-semibold text-text">Target Player</label>
             <select
@@ -184,9 +185,9 @@ export function KeyboardTab() {
           {/* Show Hints Switch */}
           <div
             className="
-            flex items-center justify-between rounded-field border
-            border-line/40 bg-field p-3
-          "
+              flex items-center justify-between rounded-field border
+              border-line/40 bg-field p-3
+            "
           >
             <div>
               <label className="text-xs font-semibold text-text">On-Screen Keycaps</label>
@@ -218,17 +219,18 @@ export function KeyboardTab() {
       {/* Rebind Key Matrix Table */}
       <div
         className="
-        flex flex-col gap-3 rounded-panel border border-line/50 bg-panel/60 p-4
-      "
+          flex flex-col gap-3 rounded-panel border border-line/50 bg-panel/60
+          p-4
+        "
       >
         <label className="text-xs font-bold tracking-wider text-muted uppercase">
           Keybindings Configuration
         </label>
         <div
           className="
-          grid grid-cols-1 gap-2
-          sm:grid-cols-2
-        "
+            grid grid-cols-1 gap-2
+            sm:grid-cols-2
+          "
         >
           {KEY_ACTION_LABELS.map((item) => {
             const boundCode = keyboard.keyMap[item.action];

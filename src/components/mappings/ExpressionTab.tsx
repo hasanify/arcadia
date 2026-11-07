@@ -80,9 +80,9 @@ export function ExpressionTab({ player }: ExpressionTabProps) {
       {/* Bend Range Config */}
       <div
         className="
-        flex items-center justify-between rounded-panel border border-line/50
-        bg-panel/60 p-4
-      "
+          flex items-center justify-between rounded-panel border border-line/50
+          bg-panel/60 p-4
+        "
       >
         <div>
           <h3 className="text-sm font-bold text-text">Pitch Bend Range</h3>
@@ -110,8 +110,9 @@ export function ExpressionTab({ player }: ExpressionTabProps) {
       {/* 8-Source Expression Routing Matrix */}
       <div
         className="
-        flex flex-col gap-3 rounded-panel border border-line/50 bg-panel/60 p-4
-      "
+          flex flex-col gap-3 rounded-panel border border-line/50 bg-panel/60
+          p-4
+        "
       >
         <label className="text-xs font-bold tracking-wider text-muted uppercase">
           Analog Expression Routing Matrix

@@ -78,27 +78,27 @@ export function RemapWizardDialog({ open, onClose }: RemapWizardDialogProps) {
   return (
     <div
       className="
-      fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4
-    "
+        fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4
+      "
     >
       <div
         className="
-        flex flex-col gap-5 rounded-panel border border-line bg-panel p-6
-        shadow-2xl inline-full max-inline-md
-      "
+          flex flex-col gap-5 rounded-panel border border-line bg-panel p-6
+          shadow-2xl inline-full max-inline-md
+        "
       >
         {/* Header */}
         <div
           className="
-          flex items-center justify-between border-be border-line/50 pbe-3
-        "
+            flex items-center justify-between border-be border-line/50 pbe-3
+          "
         >
           <div className="flex items-center gap-2">
             <span
               className="
-              flex items-center justify-center rounded-full bg-accent/20
-              font-mono text-xs font-bold text-accent block-6 inline-6
-            "
+                flex items-center justify-center rounded-full bg-accent/20
+                font-mono text-xs font-bold text-accent block-6 inline-6
+              "
             >
               {currentStepIndex + 1}
             </span>
@@ -121,9 +121,9 @@ export function RemapWizardDialog({ open, onClose }: RemapWizardDialogProps) {
           <p className="text-xs text-muted">Press the corresponding button on your controller:</p>
           <div
             className="
-            rounded-panel border border-accent/40 bg-field/80 px-6 py-4
-            shadow-inner inline-full
-          "
+              rounded-panel border border-accent/40 bg-field/80 px-6 py-4
+              shadow-inner inline-full
+            "
           >
             <span className="text-base font-bold text-accent">{step.prompt}</span>
           </div>
@@ -135,8 +135,8 @@ export function RemapWizardDialog({ open, onClose }: RemapWizardDialogProps) {
         {/* Footer Actions */}
         <div
           className="
-          flex items-center justify-between border-bs border-line/50 pbs-4
-        "
+            flex items-center justify-between border-bs border-line/50 pbs-4
+          "
         >
           <button
             type="button"
