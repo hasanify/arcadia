@@ -54,17 +54,7 @@ export function TopBar() {
           height={28}
           className="object-contain block-7 inline-auto"
         />
-        <div className="flex items-center gap-2">
-          <span className="text-sm font-bold tracking-tight text-text">Arcadia</span>
-          <span
-            className="
-            rounded-field border border-line/50 bg-field/80 px-1.5 py-0.5
-            font-mono text-[10px] text-muted
-          "
-          >
-            STUDIO
-          </span>
-        </div>
+        <span className="text-sm font-bold tracking-tight text-text">Arcadia</span>
       </div>
 
       {/* Central Transport & Metronome Controls */}
@@ -72,9 +62,9 @@ export function TopBar() {
         {/* Transport Placeholders */}
         <div
           className="
-          flex items-center gap-1 rounded-field border border-line/50 bg-field
-          p-1
-        "
+            flex items-center gap-1 rounded-field border border-line/50 bg-field
+            p-1
+          "
         >
           <button
             type="button"

@@ -10,7 +10,6 @@ describe('App', () => {
   it('renders the Arcadia studio workstation header and controller', () => {
     render(<App />);
     expect(screen.getByText('Arcadia')).toBeInTheDocument();
-    expect(screen.getByText('STUDIO')).toBeInTheDocument();
     expect(screen.getByTestId('controller-view')).toBeInTheDocument();
     expect(screen.getByTestId('status-line')).toBeInTheDocument();
   });

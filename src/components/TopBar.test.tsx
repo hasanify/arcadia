@@ -15,7 +15,6 @@ describe('TopBar', () => {
   it('renders title, logo, BPM, and AudioGate', () => {
     render(<TopBar />);
     expect(screen.getByText('Arcadia')).toBeInTheDocument();
-    expect(screen.getByText('STUDIO')).toBeInTheDocument();
     expect(screen.getByText('120')).toBeInTheDocument();
     expect(screen.getByText('ENGAGE AUDIO ENGINE')).toBeInTheDocument();
   });
