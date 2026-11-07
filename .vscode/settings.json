@@ -1,0 +1,13 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.oxc": "always",
+    "source.organizeImports": "always"
+  },
+  "oxc.enable": true,
+  "oxc.lint.run": "onType",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}

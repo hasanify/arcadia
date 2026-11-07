@@ -29,19 +29,24 @@ These guidelines are active for all agent interactions within the Arcadia worksp
 ## 3. UI Text & Copy Guidelines (`/antislop`)
 
 Follow the core `/antislop` guidelines for all interface strings, labels, and copy:
+
 - **No AI Slop / Filler**: Ban words like "revolutionary", "seamless", "effortless", "supercharge", "unleash", "elevate", "cutting-edge".
 - **Authentic Music & Hardware Language**: Use established synthesizer and beat-machine vocabulary (Cutoff, Resonance, Attack, Decay, Sustain, Release, Transients, Choke Group, FM Ratio, Octave Shift, Quantize, BPM, Swing).
 - **Concise & Direct**: Keep labels, tooltips, error messages, and dialog text brief, informative, and human. Avoid emoji spam on buttons, tabs, or headings.
 
 <!-- antislop:start -->
+
 ## antislop
+
 For UI, copy, people, mobile layout, or code comments work, read `skills/antislop/SKILL.md` (core) and then the skill for the task:
+
 - UI / visual: `skills/antislop-ui/SKILL.md`
 - Copy & text: `skills/antislop-copywriting/SKILL.md`
 - People: `skills/antislop-human/SKILL.md`
 - Mobile / responsive: `skills/antislop-layoutmobile/SKILL.md`
 - Code comments: `skills/antislop-code/SKILL.md`
-antislop active: during (session override).
+  antislop active: during (session override).
+
 <!-- antislop:end -->
 
 ---

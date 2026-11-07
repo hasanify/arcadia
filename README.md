@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./logo.png" alt="Arcadia Logo" width="160" />
+  <img src="./public/logo.webp" alt="Arcadia Logo" width="160" />
 </p>
 
 # Arcadia
@@ -34,14 +34,14 @@ Arcadia runs completely inside the browser with zero external DAW, plugin host, 
 
 ## Supported Controllers
 
-| Controller | Connection | Profile Status | Special Capabilities |
-| :--- | :--- | :--- | :--- |
-| **Sony DualSense (PS5)** | USB / Bluetooth | Native Standard | Analog triggers (L2/R2), WebHID tilt & light bar |
-| **Sony DualShock 4 (PS4)** | USB / Bluetooth | Native Standard | Analog triggers, touchpad button |
-| **Xbox Wireless (One / Series)** | USB / Bluetooth / Wireless Dongle | Native Standard | Impulse triggers, ergonomic thumbstick bend |
-| **Nintendo Switch Pro** | Bluetooth / USB | Native Standard | Inverted face button layout profile |
-| **Generic PC Gamepads** | USB / Bluetooth | Remap Wizard | Interactive 10-step button & axis calibration |
-| **Computer Keyboard** | Physical Keyboard | Built-in | Home-row chromatic C1–A1 trigger layout |
+| Controller                       | Connection                        | Profile Status  | Special Capabilities                             |
+| :------------------------------- | :-------------------------------- | :-------------- | :----------------------------------------------- |
+| **Sony DualSense (PS5)**         | USB / Bluetooth                   | Native Standard | Analog triggers (L2/R2), WebHID tilt & light bar |
+| **Sony DualShock 4 (PS4)**       | USB / Bluetooth                   | Native Standard | Analog triggers, touchpad button                 |
+| **Xbox Wireless (One / Series)** | USB / Bluetooth / Wireless Dongle | Native Standard | Impulse triggers, ergonomic thumbstick bend      |
+| **Nintendo Switch Pro**          | Bluetooth / USB                   | Native Standard | Inverted face button layout profile              |
+| **Generic PC Gamepads**          | USB / Bluetooth                   | Remap Wizard    | Interactive 10-step button & axis calibration    |
+| **Computer Keyboard**            | Physical Keyboard                 | Built-in        | Home-row chromatic C1–A1 trigger layout          |
 
 ---
 
@@ -49,7 +49,7 @@ Arcadia runs completely inside the browser with zero external DAW, plugin host, 
 
 ```
 Arcadia Core Flow:
-[ Gamepad API / Keyboard ] 
+[ Gamepad API / Keyboard ]
        │
        ▼ (60 Hz rAF / edge detection)
 [ GamepadManager / KeyboardInput ] ──► [ liveState ] ──► [ Direct DOM UI ]
@@ -67,6 +67,7 @@ Arcadia Core Flow:
 ## Quick Start
 
 ### Prerequisites
+
 - **Node.js**: `v22.12.0` or higher
 - **npm**: `v10` or higher
 - A Chromium-based browser (Google Chrome, Microsoft Edge, Brave) is recommended for full WebHID and Gamepad API feature support.
