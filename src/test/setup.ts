@@ -82,6 +82,7 @@ class MockAmplitudeEnvelope {
 }
 
 class MockFMSynth {
+  public frequency = new MockAudioParam(440);
   public harmonicity = new MockAudioParam(2);
   public modulationIndex = new MockAudioParam(10);
   public triggerAttack = vi.fn();

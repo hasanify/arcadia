@@ -141,4 +141,8 @@ export class PlayerChannel {
       }
     }
   }
+
+  public getActiveVoiceNotes(): number[] {
+    return this.voices.filter((v) => v.activeNote !== null).map((v) => v.activeNote as number);
+  }
 }
