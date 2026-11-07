@@ -1,0 +1,42 @@
+# Planning & Docs (kept local)
+.docs/
+.planning/
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build
+dist/
+dist-ssr/
+
+# Local Environment
+.env.local
+.env.*.local
+*.local
+
+# Logs & temp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing & Coverage
+coverage/
+playwright-report/
+test-results/
+.nyc_output/
+
+# Editor & OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
