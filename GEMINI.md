@@ -54,6 +54,7 @@ For UI, copy, people, mobile layout, or code comments work, read `skills/antislo
 ## 4. UI Design Guidelines (`/unslop`, `/design-taste-frontend`, `/impeccable`)
 
 - **Hardware Aesthetic**: The UI represents a tactile dark hardware music workstation (DualSense & console gaming aesthetic fused with MPC, SP-404, OP-1, and Ableton Live).
+- **Exclusive Icon Library**: All icons across the app must strictly use `lucide-react`. No emojis as icons, no raw arbitrary SVGs, and no other icon sets. Icons should have consistent 16-18px sizing with 1.5-2px stroke width matching the hardware theme.
 - **Strict 4px Rhythm Grid**: Spacing, padding, and heights must be strictly multiples of 4 (4, 8, 12, 16, 20, 24, 32px). No odd, ungrounded arbitrary numbers.
 - **Quiet Chrome & Deliberate Moments**: Keep surfaces, headers, panels, and borders subdued with tinted dark neutrals (graphite/ink). The richness and vibrant color live exclusively in active performance elements: orange active button triggers, illuminated pad indicators, dynamic level meters, and waveform slices.
 - **No Slop Visual Tells**:

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Moon, Sun } from 'lucide-react';
 
 export function App() {
   const [theme, setTheme] = useState<'dark' | 'light'>(() => {
@@ -41,6 +42,11 @@ export function App() {
             className="flex items-center gap-1.5 rounded-[3px] border border-line bg-field px-2.5 py-1 text-xs font-medium text-text hover:bg-field-hover transition-colors"
             title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} mode`}
           >
+            {theme === 'dark' ? (
+              <Sun className="h-3.5 w-3.5 text-accent" />
+            ) : (
+              <Moon className="h-3.5 w-3.5 text-accent" />
+            )}
             <span className="text-[11px] font-mono uppercase">{theme}</span>
           </button>
         </div>
