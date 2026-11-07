@@ -12,7 +12,8 @@
     "import/no-duplicates": "error",
     "typescript/no-explicit-any": "error",
     "react/react-in-jsx-scope": "off",
-    "import/no-unassigned-import": "off"
+    "import/no-unassigned-import": "off",
+    "import/no-relative-parent-imports": "error"
   },
   "ignorePatterns": [
     "dist/**",
