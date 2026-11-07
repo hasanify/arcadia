@@ -1,26 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Moon, Sun } from 'lucide-react';
+
+import { useUIStore } from '@/state/uiStore';
 
 void React;
 
 export function App() {
-  const [theme, setTheme] = useState<'dark' | 'light'>(() => {
-    if (typeof window !== 'undefined') {
-      const stored = localStorage.getItem('arcadia.theme');
-      if (stored === 'light' || stored === 'dark') return stored;
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }
-    return 'dark';
-  });
-
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('arcadia.theme', theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
-  };
+  const theme = useUIStore((state) => state.theme);
+  const toggleTheme = useUIStore((state) => state.toggleTheme);
 
   return (
     <div className="flex flex-col bg-bg text-text min-block-screen">
@@ -33,17 +20,7 @@ export function App() {
       >
         <div className="flex items-center gap-3">
           <img src="/logo.webp" alt="Arcadia Logo" className="object-contain block-7 inline-auto" />
-          <div className="flex items-center gap-2">
-            <span className="text-sm font-semibold tracking-wide text-text">Arcadia</span>
-            <span
-              className="
-                rounded-field border border-line px-1.5 py-0.5 font-mono
-                text-[10px] font-medium text-muted
-              "
-            >
-              EXPR
-            </span>
-          </div>
+          <span className="text-sm font-semibold tracking-wide text-text">Arcadia</span>
         </div>
 
         {/* Studio Controls & Theme */}

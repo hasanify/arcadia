@@ -10,7 +10,7 @@ describe('App', () => {
   it('renders the Arcadia header and title', () => {
     render(<App />);
     expect(screen.getByText('Arcadia Gamepad Studio')).toBeInTheDocument();
-    expect(screen.getByText('EXPR')).toBeInTheDocument();
+    expect(screen.getByText('Arcadia')).toBeInTheDocument();
   });
 
   it('toggles between dark and light themes', () => {

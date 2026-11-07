@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -14,21 +14,17 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/webp" href="/logo.webp" />
     <link rel="apple-touch-icon" href="/icons/icon-192.png" />
-    <meta name="theme-color" content="#1a1a1c" />
+    <meta name="theme-color" content="#e6e6eb" />
     <script>
       (function () {
         try {
           const stored = localStorage.getItem('arcadia.theme');
-          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          const theme =
-            stored === 'light'
-              ? 'light'
-              : stored === 'dark'
-                ? 'dark'
-                : prefersDark
-                  ? 'dark'
-                  : 'light';
+          const theme = stored === 'dark' ? 'dark' : 'light';
           document.documentElement.setAttribute('data-theme', theme);
+          if (theme === 'dark') {
+            const meta = document.querySelector('meta[name="theme-color"]');
+            if (meta) meta.setAttribute('content', '#1a1a1d');
+          }
         } catch (_) {}
       })();
     </script>
