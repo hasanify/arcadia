@@ -1,7 +1,10 @@
+import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
 import { App } from '@/App';
+
+void React;
 
 describe('App', () => {
   it('renders the Arcadia header and title', () => {

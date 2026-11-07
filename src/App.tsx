@@ -1,5 +1,7 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
+
+void React;
 
 export function App() {
   const [theme, setTheme] = useState<'dark' | 'light'>(() => {
@@ -21,14 +23,30 @@ export function App() {
   };
 
   return (
-    <div className="flex min-h-screen flex-col bg-bg text-text">
+    <div className="flex flex-col bg-bg text-text min-block-screen">
       {/* Hardware Top Bar */}
-      <header className="flex h-12 items-center justify-between border-b border-line px-4 bg-panel">
+      <header
+        className="
+        flex items-center justify-between border-be border-line bg-panel px-4
+        block-12
+      "
+      >
         <div className="flex items-center gap-3">
-          <img src="/logo.webp" alt="Arcadia Logo" className="h-7 w-auto object-contain" />
+          <img
+            src="/logo.webp"
+            alt="Arcadia Logo"
+            className="
+            object-contain block-7 inline-auto
+          "
+          />
           <div className="flex items-center gap-2">
-            <span className="font-semibold tracking-wide text-text text-sm">Arcadia</span>
-            <span className="rounded-[3px] border border-line px-1.5 py-0.5 text-[10px] font-mono font-medium text-muted">
+            <span className="text-sm font-semibold tracking-wide text-text">Arcadia</span>
+            <span
+              className="
+              rounded-field border border-line px-1.5 py-0.5 font-mono
+              text-[10px] font-medium text-muted
+            "
+            >
               EXPR
             </span>
           </div>
@@ -39,27 +57,47 @@ export function App() {
           <button
             type="button"
             onClick={toggleTheme}
-            className="flex items-center gap-1.5 rounded-[3px] border border-line bg-field px-2.5 py-1 text-xs font-medium text-text hover:bg-field-hover transition-colors"
+            className="
+              flex items-center gap-1.5 rounded-field border border-line
+              bg-field px-2.5 py-1 text-xs font-medium text-text
+              transition-colors
+              hover:bg-field-hover
+            "
             title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} mode`}
           >
             {theme === 'dark' ? (
-              <Sun className="h-3.5 w-3.5 text-accent" />
+              <Sun className="text-accent block-3.5 inline-3.5" />
             ) : (
-              <Moon className="h-3.5 w-3.5 text-accent" />
+              <Moon className="text-accent block-3.5 inline-3.5" />
             )}
-            <span className="text-[11px] font-mono uppercase">{theme}</span>
+            <span className="font-mono text-[11px] uppercase">{theme}</span>
           </button>
         </div>
       </header>
 
       {/* Main Studio Workspace Placeholder for Phase 0 */}
-      <main className="flex flex-1 flex-col items-center justify-center p-6 text-center">
-        <div className="max-w-md space-y-4">
-          <div className="inline-flex items-center justify-center p-3 rounded-full bg-field border border-line">
-            <img src="/logo.webp" alt="Arcadia" className="h-12 w-12 object-contain" />
+      <main
+        className="
+        flex flex-1 flex-col items-center justify-center p-6 text-center
+      "
+      >
+        <div className="space-y-4 max-inline-md">
+          <div
+            className="
+            inline-flex items-center justify-center rounded-full border
+            border-line bg-field p-3
+          "
+          >
+            <img
+              src="/logo.webp"
+              alt="Arcadia"
+              className="
+              object-contain block-12 inline-12
+            "
+            />
           </div>
           <h1 className="text-xl font-bold tracking-tight text-text">Arcadia Gamepad Studio</h1>
-          <p className="text-sm text-muted leading-relaxed">
+          <p className="text-sm/relaxed text-muted">
             Connect a game controller (DualSense, DualShock, Xbox, Switch Pro) or use your physical
             keyboard to perform and produce beats.
           </p>
@@ -67,9 +105,18 @@ export function App() {
       </main>
 
       {/* Hardware Status Line */}
-      <footer className="flex h-7 items-center justify-between border-t border-line px-4 text-[11px] font-mono text-muted bg-panel">
+      <footer
+        className="
+        flex items-center justify-between border-bs border-line bg-panel px-4
+        font-mono text-[11px] text-muted block-7
+      "
+      >
         <div className="flex items-center gap-2">
-          <span className="inline-block h-2 w-2 rounded-full bg-muted/60" />
+          <span
+            className="
+            inline-block rounded-full bg-muted/60 block-2 inline-2
+          "
+          />
           <span>No Controller Connected · Input Ready</span>
         </div>
         <div>

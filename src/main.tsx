@@ -1,8 +1,10 @@
-import { StrictMode } from 'react';
+import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 
 import { App } from '@/App';
 import '@/index.css';
+
+void React;
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {

@@ -1,6 +1,17 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["import", "react", "typescript", "unicorn"],
+  "plugins": ["import", "react", "typescript", "unicorn", "node"],
+  "jsPlugins": [
+    {
+      "name": "better-tailwindcss",
+      "specifier": "eslint-plugin-better-tailwindcss"
+    }
+  ],
+  "settings": {
+    "better-tailwindcss": {
+      "entryPoint": "src/index.css"
+    }
+  },
   "categories": {
     "correctness": "error",
     "perf": "warn",
@@ -11,10 +22,39 @@
     "no-console": ["warn", { "allow": ["warn", "error"] }],
     "import/no-duplicates": "error",
     "typescript/no-explicit-any": "error",
-    "react/react-in-jsx-scope": "off",
-    "import/no-unassigned-import": "off",
-    "import/no-relative-parent-imports": "error"
+    "react/react-in-jsx-scope": "error",
+    "import/no-unassigned-import": [
+      "error",
+      {
+        "allow": ["**/*.css", "@testing-library/jest-dom/vitest", "fake-indexeddb/auto"]
+      }
+    ],
+    "import/no-relative-parent-imports": "error",
+    "better-tailwindcss/enforce-consistent-class-order": "error",
+    "better-tailwindcss/enforce-consistent-important-position": "error",
+    "better-tailwindcss/enforce-consistent-line-wrapping": "error",
+    "better-tailwindcss/enforce-consistent-variant-order": "error",
+    "better-tailwindcss/enforce-consistent-variable-syntax": "error",
+    "better-tailwindcss/enforce-logical-properties": "error",
+    "better-tailwindcss/enforce-shorthand-classes": "error",
+    "better-tailwindcss/no-concatenated-classes": "error",
+    "better-tailwindcss/no-conflicting-classes": "error",
+    "better-tailwindcss/no-deprecated-classes": "error",
+    "better-tailwindcss/no-duplicate-classes": "error",
+    "better-tailwindcss/no-restricted-classes": "error",
+    "better-tailwindcss/no-unnecessary-whitespace": "error",
+    "better-tailwindcss/no-unknown-classes": "error",
+    "better-tailwindcss/enforce-canonical-classes": "error",
+    "node/no-process-env": "error"
   },
+  "overrides": [
+    {
+      "files": ["src/env.ts", "vite.config.ts", "playwright.config.ts"],
+      "rules": {
+        "node/no-process-env": "off"
+      }
+    }
+  ],
   "ignorePatterns": [
     "dist/**",
     "dev-dist/**",
