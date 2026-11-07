@@ -92,7 +92,7 @@ npm run dev
 - `npm run build`: Typecheck and produce optimized static production bundle in `dist/`
 - `npm run preview`: Preview the production build locally
 - `npm run typecheck`: Run TypeScript compiler checks
-- `npm run lint`: Run ESLint across code and tests
+- `npm run lint`: Run Oxlint with `eslint-plugin-better-tailwindcss` across code and tests
 - `npm run format`: Format code with Prettier
 - `npm run test`: Run unit and integration tests with Vitest
 - `npm run coverage`: Run test suite with v8 coverage reports
