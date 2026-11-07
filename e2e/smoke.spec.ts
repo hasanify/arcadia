@@ -32,6 +32,6 @@ test.describe('Arcadia Studio E2E', () => {
     await mappingsTabBtn.click();
 
     await expect(page.getByTestId('mappings-screen')).toBeVisible();
-    await expect(page.getByRole('tab', { name: 'Note Mapping' })).toBeVisible();
+    await expect(page.getByText('Notes & Scales')).toBeVisible();
   });
 });
