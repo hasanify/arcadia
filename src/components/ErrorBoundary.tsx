@@ -36,21 +36,21 @@ export class ErrorBoundary extends Component<Props, State> {
       return (
         <div
           className="
-          flex flex-col items-center justify-center bg-bg p-8 text-center
-          text-text min-block-screen
-        "
+            flex flex-col items-center justify-center bg-bg p-8 text-center
+            text-text min-block-screen
+          "
         >
           <div
             className="
-            flex flex-col items-center gap-4 rounded-panel border border-line
-            bg-panel p-6 shadow-lg max-inline-md
-          "
+              flex flex-col items-center gap-4 rounded-panel border border-line
+              bg-panel p-6 shadow-lg max-inline-md
+            "
           >
             <div
               className="
-              flex items-center justify-center rounded-full bg-rec/20 text-rec
-              block-12 inline-12
-            "
+                flex items-center justify-center rounded-full bg-rec/20 text-rec
+                block-12 inline-12
+              "
             >
               <AlertTriangle className="block-6 inline-6" />
             </div>

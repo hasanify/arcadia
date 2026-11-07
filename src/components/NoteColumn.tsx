@@ -19,15 +19,16 @@ export function NoteColumn({ player, side }: NoteColumnProps) {
   return (
     <div
       className="
-      flex flex-col gap-2 rounded-panel border border-line/60 bg-panel/60 p-3
-      inline-56
-    "
+        flex flex-col gap-2 rounded-panel border border-line/60 bg-panel/60 p-3
+        inline-56
+      "
     >
       <div
         className="
-        flex items-center justify-between border-be border-line/40 pbe-1.5
-        font-mono text-[11px] font-semibold tracking-wider text-muted uppercase
-      "
+          flex items-center justify-between border-be border-line/40 pbe-1.5
+          font-mono text-[11px] font-semibold tracking-wider text-muted
+          uppercase
+        "
       >
         <span>{side === 'left' ? 'Left Pad' : 'Right Pad'}</span>
         <span>Pitch</span>

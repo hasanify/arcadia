@@ -52,8 +52,8 @@ export function LevelMeter({ className = '' }: LevelMeterProps) {
       {/* Left Channel */}
       <div
         className="
-        relative overflow-hidden rounded-[1px] bg-bg/70 block-1.5 inline-full
-      "
+          relative overflow-hidden rounded-[1px] bg-bg/70 block-1.5 inline-full
+        "
       >
         <div
           ref={leftBarRef}
@@ -66,8 +66,8 @@ export function LevelMeter({ className = '' }: LevelMeterProps) {
       {/* Right Channel */}
       <div
         className="
-        relative overflow-hidden rounded-[1px] bg-bg/70 block-1.5 inline-full
-      "
+          relative overflow-hidden rounded-[1px] bg-bg/70 block-1.5 inline-full
+        "
       >
         <div
           ref={rightBarRef}
