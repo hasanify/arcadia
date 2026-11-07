@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { fireEvent, render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
 import { App } from '@/App';
@@ -7,10 +7,12 @@ import { App } from '@/App';
 void React;
 
 describe('App', () => {
-  it('renders the Arcadia header and title', () => {
+  it('renders the Arcadia studio workstation header and controller', () => {
     render(<App />);
-    expect(screen.getByText('Arcadia Gamepad Studio')).toBeInTheDocument();
     expect(screen.getByText('Arcadia')).toBeInTheDocument();
+    expect(screen.getByText('STUDIO')).toBeInTheDocument();
+    expect(screen.getByTestId('controller-view')).toBeInTheDocument();
+    expect(screen.getByTestId('status-line')).toBeInTheDocument();
   });
 
   it('toggles between dark and light themes', () => {
